@@ -15,9 +15,27 @@ function perimetroTriangulo(lado1, lado2, ladobase){
 
     return parseInt(lado1)+parseInt(lado2)+parseInt(ladobase);
 }
+
 function areaTriangulo(ladobase, AlturaTriangulo){
     return (ladobase * AlturaTriangulo)/2;
 }
+
+// código del triángulo isósceles
+
+function calcularAlturaTrianguloIsosceles(lado1, lado2, base){
+    if(lado1 == lado2 && lado1 != base){
+        return Math.sqrt((lado1*lado1)-((base*base)/4));
+    } else {
+        return false;
+    }
+
+    // return Math.sqrt((area**2)-((base**2)/4));
+}
+
+function calcularAreaTrianguloIsosceles(lados, base){
+    return ((base*(Math.sqrt((lados*lados)-((base*base)/4))))/2);
+}
+
 
 // Código del círculo
 const pi = Math.PI;
@@ -72,6 +90,19 @@ function calcularAreaTriangulo(){
     return document.getElementById("resultadoTriangulo").innerHTML = area;
 }
 
+// funciones de triangulo isósceles
+function AlturaTrianguloIsosceles(){
+    const {value:ladosIguales1} = document.getElementById("LadoTrianguloIsos1");
+    const {value:ladosIguales2} = document.getElementById("LadoTrianguloIsos2");
+    const {value:LadoBase} = document.getElementById("InputTrianguloIsosBase");
+
+    const altura = calcularAlturaTrianguloIsosceles(ladosIguales1, ladosIguales2, LadoBase);
+    if(altura == false){
+        return document.getElementById("resultadoTrianguloIsos").innerHTML = 'No es un triángulo isósceles';
+    }
+    return document.getElementById("resultadoTrianguloIsos").innerHTML = altura;
+}
+
 // funciones del circulo
 
 function calculardiametro(){
@@ -94,3 +125,4 @@ function calcularAreaCircunferencia(){
     const area = areaCircunferencia(value);
     return document.getElementById("resultadoCirculo").innerHTML = area;
 }
+
