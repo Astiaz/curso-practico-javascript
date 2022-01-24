@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="descuentos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Descuentos y Porcentajes | Curso de Platzi</title>
+</head>
+<body>
+        <header>
+            <h1>Calcular Precio con descuento</h1>
+            <p>Este es el segundo taller del curso práctico de Js</p>
+        </header>
+        
+        <section class="descuento-container">
+            <form action="" class="descuento-form">
+                <h2>Calcula el precio a pagar de tus productos</h2>
+                <label for="precio">Escribe el precio del producto</label>
+                <input type="number" name="precio" id="input-price">
+
+                <label for="descuento">Escribe el descuento</label>
+                <input type="number" name="descuento" id="input-discount"/>
+                <button type="button" onclick="calculoPrecioFinal()">Calcular el Precio</button>
+                <span id="finalPrice"></span>
+            </form>
+        </section>
+
+        <section class="coupon-container">
+            <form action="" class="coupon-form">
+                <h2>Inserte su cupón</h2>
+                <div class="prices-container">
+                    <p id="price">120$</p>
+                    <p id="new-price"></p>
+                </div>
+
+                <label for="coupon">Escribe el cupón</label>
+                <input type="text" name="coupon" id="input-coupon">
+
+                <button type="button" onclick="validateCoupon()">Aplicar cupón</button>
+                <span id="coupon"></span>
+            </form>
+        </section>
+
+    <script src="descuentos.js"></script>
+</body>
+</html>

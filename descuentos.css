@@ -1,0 +1,104 @@
+:root{
+    --sm: 12px;
+    --md: 14px;
+    --lg: 16px;
+
+    --green-ai: #00c16e;
+    --light-blue-ai: #0cb9c1;
+    --orange-ai: #f48924;
+    --purple-ai: #7552cc;
+
+    --white-ai: #f3f4f7;
+    --gray: #aaacb1;
+    --black: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+header, .descuento-container, .coupon-container{
+    display: grid;
+    place-content: center;
+}
+
+header{
+    padding: 24px;
+    text-align: center;
+}
+
+.descuento-container{
+    height: 400px;
+}
+
+.coupon-container{
+    height: 300px;
+}
+
+.descuento-form, .coupon-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    border-radius: 10px;
+    
+    background-color: var(--gray);
+    padding: 24px;
+}
+
+.descuento-form label, .coupon-form label{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.descuento-form input{
+    padding: 8px;
+    height: 32px;
+
+    border-radius: 10px;
+    border: none;
+}
+
+.descuento-form button{
+    margin: 24px 0px 8px 0px;
+    height: 32px;
+    border-radius: 10px;
+    border: none;
+
+    font-size: var(--sm);
+}
+
+.descuento-form span {
+    display: flex;
+
+    margin-top: 12px;
+
+    justify-content: center;
+}
+
+.descuento-form span p{
+    font-size: var(--md);
+    font-weight: bold;
+
+    margin-right: 12px;
+}
+
+.coupon-form .prices-container{
+    display: flex;
+}
+
+.coupon-form .prices-container p:nth-child(1){
+    margin-right: 12px;
+}
+
+.coupon-form .prices-container .discount-applied{
+    text-decoration: line-through;
+}
