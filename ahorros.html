@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Capacidad de Ahorro | Curso de Platzi</title>
+</head>
+<body>
+        <header>
+            <h1>Calcular la capacidad de ahorro</h1>
+            <p>Esto es un reto extra del curso práctico de Js</p>
+        </header>
+
+        <section class="50/30/20-container ahorro-container">
+            <form action="" class="ahorro-form">
+                <h2>Metodo 50/30/20</h2>
+                <label for="ingresos">Introduzca su ingreso mensual</label>
+                <input type="number" name="ingresos" id="ingresosInput">
+
+                <button type="button" onclick="calcularValores()">Calcular</button>
+                <div>
+                    <span id="result1"></span>
+                    <span id="result2"></span>
+                    <span id="result3"></span>
+                </div>
+            </form>
+        </section>
+        <section class="50/30/20-container ahorro-container">
+            <form action="" class="ahorro-form">
+                <h2>Pagando gastos</h2>
+                <label for="ingresos">Introduzca su ingreso mensual</label>
+                <input type="number" name="ingresos" id="ingresosInput2">
+                <label for="gastos">Introduzca los gastos mensuales</label>
+                <input type="number" name="gastos" id="gastosInput">
+                <label for="porcentaje">Introduzca porcentaje que desea ahorrar</label>
+                <input type="number" name="porcentaje" id="porcentajeInput">
+
+                <button type="button" onclick="calculoAhorroConGastos()">Calcular</button>
+                <div>
+                    <span id="resultAhorrado"></span>
+                    <span id="resultRestante"></span>
+                </div>
+            </form>
+        </section>
+    <script src="ahorros.js"></script>
+</body>
+</html>
