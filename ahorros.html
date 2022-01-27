@@ -11,41 +11,58 @@
 </head>
 <body>
         <header>
-            <h1>Calcular la capacidad de ahorro</h1>
-            <p>Esto es un reto extra del curso práctico de Js</p>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./figuras.html">Taller #1</a></li>
+                    <li><a href="./descuentos.html">Taller #2</a></li>
+                    <li><a href="./promedio.html">Taller #3</a></li>
+                    <li><a href="./moda.html">Taller #3c</a></li>
+                    <li><a href="./salarios.html">Taller #4</a></li>
+                    <li><a href="./ahorros.html">Taller #4</a></li>
+                </ul>
+            </nav>
         </header>
 
-        <section class="50/30/20-container ahorro-container">
-            <form action="" class="ahorro-form">
-                <h2>Metodo 50/30/20</h2>
-                <label for="ingresos">Introduzca su ingreso mensual</label>
-                <input type="number" name="ingresos" id="ingresosInput">
-
-                <button type="button" onclick="calcularValores()">Calcular</button>
-                <div>
-                    <span id="result1"></span>
-                    <span id="result2"></span>
-                    <span id="result3"></span>
-                </div>
-            </form>
-        </section>
-        <section class="50/30/20-container ahorro-container">
-            <form action="" class="ahorro-form">
-                <h2>Pagando gastos</h2>
-                <label for="ingresos">Introduzca su ingreso mensual</label>
-                <input type="number" name="ingresos" id="ingresosInput2">
-                <label for="gastos">Introduzca los gastos mensuales</label>
-                <input type="number" name="gastos" id="gastosInput">
-                <label for="porcentaje">Introduzca porcentaje que desea ahorrar</label>
-                <input type="number" name="porcentaje" id="porcentajeInput">
-
-                <button type="button" onclick="calculoAhorroConGastos()">Calcular</button>
-                <div>
-                    <span id="resultAhorrado"></span>
-                    <span id="resultRestante"></span>
-                </div>
-            </form>
-        </section>
-    <script src="ahorros.js"></script>
+        <main>
+            <section class="info">            
+                <h1>Calcular la capacidad de ahorro</h1>
+                <p>Esto es un reto extra del curso práctico de Js</p>
+            </section>
+    
+            <section class="50/30/20-container ahorro-container">
+                <form action="" class="ahorro-form">
+                    <h2>Metodo 50/30/20</h2>
+                    <label for="ingresos">Introduzca su ingreso mensual</label>
+                    <input type="number" name="ingresos" id="ingresosInput">
+    
+                    <button type="button" onclick="calcularValores()">Calcular</button>
+                    <div>
+                        <span id="result1"></span>
+                        <span id="result2"></span>
+                        <span id="result3"></span>
+                    </div>
+                </form>
+            </section>
+            
+            <section class="50/30/20-container ahorro-container">
+                <form action="" class="ahorro-form">
+                    <h2>Pagando gastos</h2>
+                    <label for="ingresos">Introduzca su ingreso mensual</label>
+                    <input type="number" name="ingresos" id="ingresosInput2">
+                    <label for="gastos">Introduzca los gastos mensuales</label>
+                    <input type="number" name="gastos" id="gastosInput">
+                    <label for="porcentaje">Introduzca porcentaje que desea ahorrar</label>
+                    <input type="number" name="porcentaje" id="porcentajeInput">
+    
+                    <button type="button" onclick="calculoAhorroConGastos()">Calcular</button>
+                    <div>
+                        <span id="resultAhorrado"></span>
+                        <span id="resultRestante"></span>
+                    </div>
+                </form>
+            </section>
+        </main>
+    <script src="./src/js/ahorros.js"></script>
 </body>
 </html>

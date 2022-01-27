@@ -1,36 +1,13 @@
-:root{
-    --sm: 12px;
-    --md: 14px;
-    --lg: 16px;
 
-    --green-ai: #00c16e;
-    --light-blue-ai: #0cb9c1;
-    --orange-ai: #f48924;
-    --purple-ai: #7552cc;
+/* Main CSS */
+@import 'principal.css';
 
-    --white-ai: #f3f4f7;
-    --gray: #aaacb1;
-    --black: #000;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    font-family: 'Quicksand', sans-serif;
-}
-
-
-
-header, .descuento-container, .coupon-container{
+.info, .descuento-container, .coupon-container{
     display: grid;
     place-content: center;
 }
 
-header{
+.info{
     padding: 24px;
     text-align: center;
 }
