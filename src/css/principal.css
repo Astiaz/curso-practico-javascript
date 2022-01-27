@@ -4,13 +4,13 @@
     --lg: 16px;
 
     --green-ai: #00c16e;
-    --light-blue-ai: #0cb9c1;
-    --orange-ai: #f48924;
+    --orange: #f59741;
     --purple-ai: #7552cc;
+    --ligth-purple: #886bd3;
 
-    --white-ai: #f3f4f7;
     --gray: #aaacb1;
-    --black: #000;
+    --white-ai: #f3f4f7;
+    --dark-purple: #171029;
 }
 
 *{
@@ -25,7 +25,11 @@
 
 header{
     padding: 16px;
-    background-color: var(--gray);
+    color: var(--white-ai);
+    background-color: var(--dark-purple);
+
+    z-index: 4;
+    /* box-shadow: 0px 1px 15px var(--orange); */
 }
 
 header nav ul{
@@ -53,4 +57,18 @@ header nav ul li a:hover{
 
 body{
     font-family: 'Quicksand', sans-serif;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    padding: 16px;
+    justify-content: end;
+    color: var(--orange);
+    background-color: var(--dark-purple);
+}
+
+footer a {
+    color: var(--white-ai);
 }
