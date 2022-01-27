@@ -1,6 +1,6 @@
 
 /* Main CSS */
-@import 'principal.css';
+@import 'main.css';
 
 .info, .descuento-container, .coupon-container{
     display: grid;

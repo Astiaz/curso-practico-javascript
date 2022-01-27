@@ -1,4 +1,4 @@
-@import 'principal.css';
+@import 'main.css';
 
 body{
     height: 100vh;
@@ -96,30 +96,31 @@ main{
     margin: 8px 0px 16px 0px;
 }
 
-.container-card button{
+.container-card .primary-button{
     height: 32px;
     width: 200px;
-    border: none;
-    border-radius: 10px;
-    letter-spacing: 1px;
+    padding: 4px;
 
-    font-size: var(--md);
+    border: 1px solid var(--dark-purple);
+    border-radius: 10px;
+    
+    letter-spacing: 1px;
+    text-align: center;
     font-weight: 500;
+    
+    background-color: var(--white-ai);
 
     cursor: pointer;
     transition-duration: 500ms;
 }
 
-.container-card button:hover{
-    /* color: var(--white-ai); */
+.container-card .primary-button:hover{
+    color: var(--orange);
     background-color: var(--dark-purple);
     
-    color: var(--orange);
-
     font-size: var(--lg);
     font-weight: 500;
     
-    /* transform: scale(1.1, 1.1); */
     transition-duration: 200ms;
 }
 
@@ -147,7 +148,6 @@ main{
 .salary-card{
     border-top: 2px solid var(--dark-purple);
 }
-
 
 /* Media Queries */
 
