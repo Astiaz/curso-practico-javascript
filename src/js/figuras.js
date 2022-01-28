@@ -100,7 +100,7 @@ function AlturaTrianguloIsosceles(){
     if(altura == false){
         return document.getElementById("resultadoTrianguloIsos").innerHTML = 'No es un triángulo isósceles, revise los valores';
     }
-    return document.getElementById("resultadoTrianguloIsos").innerHTML = 'Altura: ' + altura;
+    return document.getElementById("resultadoTrianguloIsos").innerHTML = '<p>Altura:</p> ' + altura;
 }
 
 // funciones del circulo
@@ -109,20 +109,20 @@ function calculardiametro(){
     const {value} = document.getElementById("radioCirculo");
 
     const diametro = calcularDiametro(value);
-    return document.getElementById("resultadoCirculo").innerHTML = 'Diametro: ' +diametro;
+    return document.getElementById("resultadoCirculo").innerHTML = '<p>Diametro: </p> ' +diametro;
 }
 
 function calcularPerimetroCircunferencia(){
     const {value} = document.getElementById("radioCirculo");
 
     const perimetro = calcularCircunferencia(value);
-    return document.getElementById("resultadoCirculo").innerHTML = 'Perimetro: ' +perimetro;
+    return document.getElementById("resultadoCirculo").innerHTML = '<p>Perimetro: </p> ' +perimetro;
 }
 
 function calcularAreaCircunferencia(){
     const {value} = document.getElementById("radioCirculo");
 
     const area = areaCircunferencia(value);
-    return document.getElementById("resultadoCirculo").innerHTML = 'Área: ' +area;
+    return document.getElementById("resultadoCirculo").innerHTML = '<p>Área: </p> ' +area;
 }
 
